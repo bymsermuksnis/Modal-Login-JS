@@ -1,0 +1,133 @@
+body {
+    background-image: url('fundo.gif');
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(7, 196, 164);
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.img {
+    background-image: url('user.png');
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.text {
+    position: absolute;
+    top: 35%;
+    left: 19%;
+}
+
+input[type="text"] {
+    border: none;
+    color: hsl(0, 1%, 57%);
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: black;
+}
+
+input[type="password"] {
+    border: none;
+    color: hsl(0, 1%, 57%);
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.btnLogar {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(7, 196, 164);
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.btnCancelar {
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.btnLogar:hover {
+    border-radius: 15px;
+    animation-delay: 600ms;
+    background: black;
+    color: white;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.btn:hover {
+    border-radius: 15px;
+    animation-delay: 600ms;
+    background: black;
+    color: white;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.btnCancelar:hover {
+    border-radius: 15px;
+    animation-delay: 600ms;
+    background: rgb(143, 6, 6);
+    color: white;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.modal {
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.login {
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    left: 44%;
+    display: none;
+}
+
+@keyframes animate {
+    from {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
